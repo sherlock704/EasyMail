@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:hint="To:">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/to"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CC:"
+        android:padding="5dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cc"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject:"
+            android:padding="5dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sub"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+   <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mail Body:"
+            android:padding="5dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mailbody"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/left"
+               android:layout_marginLeft="4dp"
+               android:text="left"
+               ></Button>
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/center"
+               android:text="center"
+               android:layout_marginLeft="4dp"
+               ></Button>
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/right"
+               android:layout_marginLeft="4dp"
+               android:text="right"
+               ></Button>
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <Button
+                android:id="@+id/bolds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:text="B"></Button>
+            <Button
+                android:id="@+id/ital"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:text="I"></Button>
+            <Button
+                android:id="@+id/none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="None"></Button>
+
+        </LinearLayout>
+</LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+         >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:textSize="15dp"
+    android:padding="5dp"
+    android:hint="Shedule"
+    android:textColor="#080808"
+    ></TextView>
+            <RadioGroup
+                android:id="@+id/radioGroup_payment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/recursive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+
+                    android:text="Recursive"
+                    android:textStyle="bold" />
+                <RadioButton
+                    android:id="@+id/week"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:backgroundTint="@color/white"
+
+                    android:text="Week"
+                    android:textStyle="bold" />
+                <RadioButton
+                    android:id="@+id/month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:backgroundTint="@color/white"
+
+                    android:text="Month"
+                    android:textStyle="bold" />
+                <RadioButton
+                    android:id="@+id/year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:backgroundTint="@color/white"
+
+                    android:text="Year"
+                    android:textStyle="bold" />
+
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+       <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="send"
+           android:textColor="#FFFDFD"
+
+           style="?attr/materialButtonStyle"
+            />
+    </LinearLayout>
+
+</LinearLayout>
